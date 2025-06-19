@@ -15,6 +15,8 @@ return {
 				},
 			})
 			vim.api.nvim_set_hl(0, "@markup.link.latex", {link = "@constant"})
+			vim.cmd([[highlight! SpellBad guifg=orange]])
+
 			vim.opt.foldmethod = "expr"
 			vim.opt.foldexpr   = "nvim_treesitter#foldexpr()"
 		end,

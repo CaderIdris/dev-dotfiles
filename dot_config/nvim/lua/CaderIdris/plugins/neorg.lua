@@ -22,6 +22,7 @@ return {
 						}
 					}, -- Completion behaviour
 				["core.concealer"] = {}, -- Adds pretty icons to your documents
+				["core.export"] = {}, -- Export to md
 				["core.summary"] = {
 						config = {
 

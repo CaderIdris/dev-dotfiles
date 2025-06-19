@@ -19,7 +19,8 @@ lsp_servers = {
 	'dockerls',
 	'ruff',
 	'htmx',
-	'jinja_lsp'
+	'jinja_lsp',
+	'harper_ls'
 	--'gleam'
 }
 
@@ -52,10 +53,7 @@ return {
 		"neovim/nvim-lspconfig",
 		config = function()
 			for _, server in ipairs(lsp_servers) do
-				require("lspconfig")[server].setup(
-					{
-					}
-				)
+				require("lspconfig")[server].setup({})
 			end
 		end,
 	},
