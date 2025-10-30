@@ -66,7 +66,3 @@ $env.ENV_CONVERSIONS = {
 $env.NU_LIB_DIRS = [
     ($nu.default-config-dir | path join 'scripts') # add <nushell-config-dir>/scripts
 ]
-
-
-mkdir ~/.cache/starship
-starship init nu | save -f ~/.cache/starship/init.nu

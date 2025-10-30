@@ -1,7 +1,6 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
-		event = "VeryLazy",
 		config = function()
 			require("nvim-treesitter.configs").setup({
 				ensure_installed = "all",
@@ -20,6 +19,7 @@ return {
 			vim.opt.foldmethod = "expr"
 			vim.opt.foldexpr   = "nvim_treesitter#foldexpr()"
 		end,
+		build = ':TSUpdate'
 	},
 
 	{

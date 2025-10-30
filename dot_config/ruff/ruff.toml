@@ -1,9 +1,8 @@
-[tool.ruff]
 extend-include = ["*.ipynb"]
 line-length = 79
 indent-width = 4
 
-[tool.ruff.lint]
+[lint]
 select = [
 	"F",  # pyflakes: General
 	"E",  # pycodestyle: General errors
@@ -58,10 +57,10 @@ exclude = [
     ".venv",
 ]
 
-[tool.ruff.lint.pydocstyle]
+[lint.pydocstyle]
 convention = "numpy"
 
-[tool.ruff.lint.per-file-ignores]
+[lint.per-file-ignores]
 "tests/*.py" = [
     "D100",
     "D101",
