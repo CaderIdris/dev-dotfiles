@@ -7,10 +7,6 @@ alias cd="z"
 
 alias bsync="browser-sync start --server --files --no-open"
 
-alias jupyter="cd && pipenv run jupyter-lab $HOME"
-
-alias code="vscodium"
-
 alias pipx="sudo --preserve-env pipx"
 
-alias winblows="quickemu --vm windows-11.conf --display spice"
+alias hosex="distrobox-host-exec"
