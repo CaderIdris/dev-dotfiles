@@ -9,7 +9,6 @@ return {
 	},
 	{
 		"nvim-neorg/neorg",
-		dependencies = { "luarocks.nvim" },
 		lazy = false,
 		version = "*",
 		config = function()
@@ -38,8 +37,11 @@ return {
 						default_workspace = "phd"
 						},
 					},
-				},
+				}
 			}
 		end,
+		dependencies = {
+			"luarocks.nvim",
+		},
 	}
 }

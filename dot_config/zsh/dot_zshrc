@@ -9,7 +9,7 @@ source $ZDOTDIR/.zshenv.zsh
 eval "$(direnv hook zsh)"
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
-eval "$(oh-my-posh init zsh --config ~/.config/omp/gruvbox.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.config/omp/datblygiad.omp.json)"
 
 zsh ~/.local/share/quotes/run.zsh
 

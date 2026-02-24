@@ -17,7 +17,8 @@ plugin_files = {
 	require('CaderIdris.plugins.silicon'),
 	require('CaderIdris.plugins.dadbod'),
 	require('CaderIdris.plugins.iconpicker'),
-	require('CaderIdris.plugins.misc'),
+	require('CaderIdris.plugins.productivity'),
+	-- require('CaderIdris.plugins.misc'),
 }
 
 local plugins = {

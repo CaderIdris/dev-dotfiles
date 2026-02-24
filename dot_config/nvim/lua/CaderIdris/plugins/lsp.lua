@@ -9,7 +9,8 @@ lsp_servers = {
 	'rust_analyzer',
 	'clangd',
 	'lua_ls',
-	'pyright',
+	'tinymist',
+	'ty',
 	'taplo',
 	'yamlls',
 	'texlab',
@@ -20,7 +21,6 @@ lsp_servers = {
 	'ruff',
 	'htmx',
 	'jinja_lsp',
-	'harper_ls'
 	--'gleam'
 }
 

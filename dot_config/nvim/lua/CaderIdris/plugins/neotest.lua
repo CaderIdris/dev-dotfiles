@@ -31,15 +31,20 @@ return {
 		init = function()
 			local wk = require("which-key")
 			local nt = require("neotest")
-			wk.add(
-				{
-					{ "<Leader>t", group = "Neotest" },
-					{ "<Leader>ta", all_tests, desc = "Run all tests" },
-					{ "<Leader>tj", nt.run.attach, desc = "Attach to nearest test" },
-					{ "<Leader>tr", nt.run.run, desc = "Run single test" },
-					{ "<Leader>ts", nt.run.stop, desc = "Stop nearest test" },
-				}
-			)
+			vim.api.nvim_create_autocmd("Filetype", {
+				pattern = "py",
+				callback = function()
+					wk.add(
+						{
+							{ "<Leader>t", group = "Neotest" },
+							{ "<Leader>ta", all_tests, desc = "Run all tests" },
+							{ "<Leader>tj", nt.run.attach, desc = "Attach to nearest test" },
+							{ "<Leader>tr", nt.run.run, desc = "Run single test" },
+							{ "<Leader>ts", nt.run.stop, desc = "Stop nearest test" },
+						}
+					)
+				end,
+			})
 		end,
 	}
 }
