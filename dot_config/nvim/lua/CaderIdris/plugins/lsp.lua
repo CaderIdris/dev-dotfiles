@@ -34,6 +34,12 @@ vim.filetype.add {
 
 return {
 	{
+	  'chomosuke/typst-preview.nvim',
+	  ft = 'typst',
+	  version = '1.*',
+	  opts = {}, -- lazy.nvim will implicitly calls `setup {}`
+	},
+	{
 		"williamboman/mason.nvim",
 		config = function()
 			require("mason").setup()
